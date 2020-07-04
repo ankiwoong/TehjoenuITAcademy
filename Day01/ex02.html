@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>1일차 태그 연습하기</title>
+</head>
+
+<body>
+
+    <a href="#bottom"> 아래로 가기 </a>
+
+    <h2> 글자 관련 태그 </h2>
+    <font color="red" face="궁서" size="6"> font - 비표준 글자 태그 </font>
+    <p> <b>무궁화</b>꽃이 피었습니다. 다람쥐, 요구르트, 햄버거를 먹자</p>
+    <p> <i>무궁화</i>꽃이 피었습니다. <small>다람쥐, 요구르트,</small> 햄버거를 먹자</p>
+    <p> <strong>무궁화</strong>꽃이 피었습니다. <big>다람쥐, 요구르트,</big> 햄버거를 먹자</p>
+    <p> <em>무궁화</em>꽃이 피었습니다. 다람쥐, 요구르트, 햄버거를 먹자</p>
+    <br>
+    H<sub>2</sub>O <br>
+    1평은 3.3m<sup>2</sup>입니다.<br>
+    <ins> 밑줄넣기 insert </ins><br>
+    <u> underline 비표준 </u><br>
+    <del> 취소선 표준 </del><br>
+    <s> 취소선 비표준 </s><br>
+    <strike> 취소선 비표준 </strike><br>
+
+    <a name="bottom"> 아래화면 </a><br>
+
+    <!--
+코딩시 지원하지 않는 브라우저까지 신경써서 코딩한다.
+-->
+    <ruby>
+        <span>大韓民國</span>
+        <rp>(</rp>
+        <rt>대한민국</rt>
+        <rp>)</rp>
+    </ruby>
+
+    <div>
+        <p> welcome to <span style="background:red;color:gold">my</span> world</p>
+    </div>
+
+    <!-- 잘못된 태그 방식 타이틀에 p 사용 / p와 h1 태그를 혼용 사용
+<h1> 머리말 태그 <p>안녕</p>하세요 </h1>
+<p> 안녕하세요 <h1> 안녕 </h1> 잘못된 코딩 </p>
+-->
+
+    <h1> 가나<span>다라</span>마바사 </h1>
+
+    <abbr title="hyperTextMarkup language"> HTML 축약어</abbr>이란? <br>
+    <acronym title="world wide web"> www는 w3c에 제정한 언어 두문자어</acronym>
+    &copy;
+    <pre>
+    입력한대로                    그대로
+    나오는 태그
+</pre>
+
+    <marquee>비표준 - 글자움직이는 태그</marquee>
+    <mark>형광 문자 </mark>
+    <address>서울시 금천구</address>
+
+    <div>
+        <address> 주소 </address>
+    </div>
+
+    <footer>
+        <address> 주소 </address>
+
+    </footer>
+
+    <h2> 목록 태그 실습하기 </h2>
+
+    <ol type="A" start="3"> 가고싶은나라
+        <li>한국</li>
+        <li>미국</li>
+        <li>북한</li>
+    </ol>
+
+    <ul type="square"> 먹고싶은메뉴
+        <li>짜장면</li>
+        <li>볶음밥</li>
+        <li>김치</li>
+    </ul>
+
+    <dl>
+        <dt> html이란 </dt>
+        <dd> 홈페이지란 만드는 웹표준 언어</dd>
+    </dl>
+
+    <!--
+style를 줘서 확인 하기
+-->
+
+    <style>
+        ul,
+        li,
+        dl,
+        dt,
+        dd,
+        ol {
+            border: 1px solid red;
+            margin: 5px;
+        }
+    </style>
+
+</body>
+
+</html>
