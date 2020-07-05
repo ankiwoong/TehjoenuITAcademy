@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=ecu-kr">
+    <title>항공권 예약 폼 예제</title>
+</head>
+
+<body>
+
+    <form name="myform">
+        <div class="area">
+            <table>
+                <caption>실시간 항공권 예약 시스템</caption>
+                <colgroup>
+                    <col width="35%">
+                    <col width="65%">
+                </colgroup>
+
+                <tr>
+                    <th colspan="2">
+                        <input type="radio" name="trip" value="RT" checked="checked">
+                        <strong>왕복</strong>
+                        <input type="radio" name="trip" value="OW">
+                        <strong>편도</strong>
+                </tr>
+
+                <tr>
+                    <th>출발도시</th>
+                    <td>
+                        <select id="arr1" name="arr1">
+                            <option value="ICN">인천</option>
+                            <option value="GMP">김포</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>도착도시</th>
+                    <td>
+                        <select id="arr2" name="arr1" size="8" multiple>
+                            <optgroup label="대한민국">
+                                <option value="ICN">인천</option>
+                                <option value="PUS">부산</option>
+                                <option value="CJU">제주</option>
+                            </optgroup>
+                            <optgroup label="유럽">
+                                <option value="ROM">로마</option>
+                                <option value="BER">베를린</option>
+                                <option value="PAR">파리</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>인원</th>
+                    <td>
+                        <p>
+                            <select id="adt" name="adt">
+                                <option value="1">1명</option>
+                                <option value="2">2명</option>
+                            </select>성인<br>
+                            <select id="chd" name="chd" disabled>
+                                <option value="0">0명</option>
+                                <option value="1">1명</option>
+                            </select>아동</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="작성완료">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+
+
+</body>
+
+</html>
