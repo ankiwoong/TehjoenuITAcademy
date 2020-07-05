@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+<style>
+body{
+	margin:50px;
+	font:1em "맑은 고딕",Cambria,Georgia,sans-serif;
+	background-color:#FEEFFA;
+}
+
+h2{
+	color:#1212A2;
+}
+
+h3{
+	background:#AEC7E1;
+	font-size:20px;
+	font-weight:bold;
+	padding:10px;
+}
+
+table{
+	width:700px;
+	border-collapse:collapse;
+}
+
+thead th{
+	text-align:left;
+	background:#3A4856;
+	padding:10px;
+	color:#ffffff;
+}
+
+th, td{
+	padding:15px;
+	text-align:left;
+	background:#F3F5F7;
+}
+
+meter, progress{
+	width:80%;
+	height:25px;
+}
+</style>
