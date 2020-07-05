@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>html5에 새로 추가된 신종태그들</title>
+</head>
+
+<body>
+
+	<h1>html5에 새로 추가된 신종태그들</h1>
+	<figure>
+		<img src="img/1.png" width="200" height="200" alt="대체텍스트" title="풍선도움말">
+		<img src="img/2.png" width="200" height="200" alt="대체텍스트" title="풍선도움말">
+		<img src="img/3.png" width="200" height="200" alt="대체텍스트" title="풍선도움말">
+		<figcaption>그림에 대한 캡션</figcaption>
+	</figure>
+
+	<h1>신간정보</h1>
+	<details>
+		<summary>아이폰으로 용돈벌기</summary>
+		<ul>
+			<li>출판사 : 아이콕스</li>
+			<li>저자 : 정창훈</li>
+			<li>가격 : 25,000원</li>
+			<li>출간일 : <time datetime="2012-05-25">2012년 5월 25일</time></li>
+		</ul>
+	</details>
+
+	<h1>progress 요소와 meter 요소</h1>
+	<h2>파일 다운로드</h2>
+	<p>다운로드 진행 : <progress max=“100”><span>0</span>%</progress></p>
+	<h2>투표상황</h2>
+	<p>현재 투표 진행상황: <meter min="0" max="100" value="20" low="30" high="65" title="percent">20%</meter></p>
+	<p>현재 투표 진행상황: <meter min="0" max="100" value="60" low="30" high="65" title="percent">60%</meter></p>
+	<p>현재 투표 진행상황: <meter min="0" max="100" value="70" low="30" high="65" title="percent">70%</meter></p>
+
+	<form onClick="결과.value=입력.value">
+		<input type="range" name="입력">
+		<output name="결과"></output>점
+	</form>
+
+	<svg height="250" width="500">
+		<polygon points="220,10 300,210 170, 250 123,234" style="fill:lime;stroke:purple;strole-width:1" />
+	</svg>
+
+	<svg width="7000" height="300">
+		<rect width="700" height="300" fill="red"></rect>
+		<circle cx="350" cy="150" r="100" fill="orange"></circle>
+	</svg>
+
+	<blockquote>
+		글자가 자동 들여쓰기 된다.
+	</blockquote>
+	<q> 인용구문 </q>
+
+</body>
+
+</html>
