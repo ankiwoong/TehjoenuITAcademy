@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>폼 예제</title>
+</head>
+
+<body>
+    <form>
+        <fieldset style="width:400px">
+            <legend>블로그를 개설한 사이트를 모두 선택하세요.</legend>
+            <label><input type="checkbox">네이버</label>
+            <label><input type="checkbox">다음</label>
+            <label><input type="checkbox">구글</label>
+        </fieldset>
+        <br>
+        <fieldset style="width:400px">
+            <legend>검색으로 어느 사이트를 자주 사용하세요?</legend>
+            <label><input type="radio" name="site">네이버</label>
+            <label><input type="radio" name="site">다음</label>
+            <label><input type="radio" name="site">구글</label>
+        </fieldset>
+        <br>
+        <fieldset style="width:400px">
+            <legend>자주 사용하는 메일 계정은요?</legend>
+            <label>
+                <select>
+                    <option>naver.com</option>
+                    <option>daum.net</option>
+                    <option>google.com</option>
+                </select>
+            </label>
+        </fieldset>
+        <br>
+        <fieldset style="width:400px">
+            <legend>블로그에 대한 느낌을 자유롭게 적어주세요.</legend>
+            <label>
+                <textarea cols="30" rows="10" style="resize:none"></textarea>
+            </label>
+        </fieldset>
+        <br>
+        <fieldset style="width:400px">
+            <legend>글 수정시에 필요한 계정을 입력하세요.</legend>
+            <label>id : <input type="text"></label>
+            <label>pw : <input type="password"></label>
+        </fieldset>
+        <br>
+        <fieldset style="width:400px">
+            <legend> 중국음식중에서 좋아하는 메뉴를 모두 선택하세요</legend>
+            <label><input type="checkbox">짜장면</label>
+            <label><input type="checkbox">간짜장</label>
+            <label><input type="checkbox">우동</label>
+            <label><input type="checkbox">울면</label><br>
+            <label><input type="checkbox">기스면</label>
+            <label><input type="checkbox">군만두</label>
+            <label><input type="checkbox">물만두</label>
+        </fieldset>
+        <br>
+        <input type="reset" value="다시쓰기">
+        <input type="submit" value="전송하기">
+    </form>
+</body>
+
+</html>
