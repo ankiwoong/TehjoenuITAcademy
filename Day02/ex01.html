@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>2일차 멀티미디어 태그 연습하기</title>
+</head>
+
+<body>
+
+<h1>멀티미디어관련태그들</h1>
+
+<embed src="media/baby.MP4" width="150" height="150"></embed>
+<object data="media/Fireworks.mp4" width="200" height="200"></object>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oCJyeyW8g2c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="media/Wildlife.mp4" width="200" height="200"></iframe>
+
+<h1>html5에 새로추가된 관련 태그</h1>
+<!--오디오 태그-->
+<audio src="media/Kalimba.mp3" controls></audio>
+<audio controls="controls" autoplay="true" preload="auto" loop muted>
+	<source src="media/Kalimba.ogg" type="audio/ogg">
+    <source src="media/Kalimba.mp3" type="audio/mp3">
+</audio>
+
+<!--비디오태그-->
+<video controls width="300" height="300" preload="auto" poster="img/1.png">
+	<source src="media/Wildlife.webm" type="video/webm">
+    <source src="media/Wildlife.mp4" type="video/mp4">
+</video>
+
+<!--비디오태그-->
+<video poster="http://placehold.it/640x360" width="640" height="360" controls="controls">
+	<source src="Wildlife.mp4" type="video/mp4" />
+	<source src="Wildlife.webm" type="video/webm" />
+</video>
+
+<!--자막삽입태그-->
+<video width="640" height="360" controls="controls">
+	<source src="Wildlife.mp4" type="video/mp4" />
+	<source src="Wildlife.webm" type="video/webm" />
+	<track kind="subtitles" src="track.srt" srclang="ko" label="Korean" />
+	<track kind="subtitles" src="track.srt" srclang="en" label="English" />
+	<track kind="subtitles" src="track.srt" srclang="jp" label="Japanese" />
+	<track kind="subtitles" src="track.srt" srclang="ch" label="Chinese" />
+</video>
+
+<!--iframe 태그-->
+<a href="http://www.daum.net" target="iframe">다음</a><br>
+<a href="http://www.nate.com" target="iframe">네이트</a><br>
+<iframe src="" width="500" height="500" name="iframe"></iframe>
+
+</body>
+</html>
