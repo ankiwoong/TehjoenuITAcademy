@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ko">
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>2일차 회원가입 페이지 연습하기</title>
+</head>
+
+<body>
+  <form action="www.naver.com">
+    <h1>회원가입 페이지</h1>
+    <table border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td colspan="2">* 회원 가입을 하기에 앞서 회원약관을 읽어보시기 바랍니다.</td>
+      </tr>
+      <tr>
+        <td colspan="2"><textarea cols="110" rows="5" style="resize:none">
+회원약관
+
+회원가입에 관한 계약조항이 명시된 문서
+
+회원약관이란 다수의 고객을 대상으로 상품 또는 용역을 제공하는 금융 및 보험, 통신 등의 사업자가 정한 표준화된 계약조항을 말한다.
+
+회원약관의 작성목적은 복잡한 계약절차로 인해 거래가 지연되는 것을 방지하는 데 있다.
+
+회원약관에는 계약의 성립 내용을 정확히 기재하고, 회사 및 회원의 의무와 서비스 이용 범위 등을 구체적으로 명시해야 한다.
+
+또 계약해지 및 손해배상 등에 대해 기재하고, 관할법원에 관련된 조항을 명시하여 향후 발생할 수 있는 분쟁을 방지하도록 한다. 
+    </textarea></td>
+      </tr>
+      <tr>
+        <td>위의 약관에*</td>
+        <td><input type="checkbox" name="ok">
+          [동의합니다]
+          <input type="checkbox" name="ok">
+          [비동의합니다] </td>
+      </tr>
+      <tr>
+        <td colspan="2">* 회원 정보를 입력하신 후 가입하기를 눌러주십시오. * 표시는 필수입력입니다.</td>
+      </tr>
+      <tr>
+        <td bgcolor="lime"><label for="name"> 이름*</label></td>
+        <td><input type="text" autofocus id="name" placeholder="한글로만 입력해주세요" required></td>
+      </tr>
+      <tr>
+        <td bgcolor="lime">아이디(ID)* </td>
+        <td><input type="text" placeholder="영문으로만 입력해주세요" required></td>
+      </tr>
+      <tr>
+        <td bgcolor="lime">비밀번호*</td>
+        <td><input type="password" placeholder="영문 숫자로만 입력해주세요" size="10" minlength="4" maxlength="10" required>
+          비밀번호확인
+          <input type="password" placeholder="비밀번호와 동일하게 입력해주세요" minlength="4" maxlength="10" required>
+          (문자와 숫자4~10자리) </td>
+      </tr>
+      <tr>
+        <td bgcolor="lime">주민등록번호*</td>
+        <td><input type="text" size="6">
+          -
+          <input type="text" size="6" minlength="6" maxlength="6" required></td>
+      </tr>
+      <tr>
+        <td bgcolor="lime">성별(연령대)*</td>
+        <td> 남성
+          <input type="radio" name="gender">
+          여성
+          <input type="radio" name="gender">
+          연령대
+          <input type="number" value="10" min="10" max="100" step="10" required>
+          대 </td>
+      </tr>
+      <tr>
+        <td bgcolor="lime">이 사이트를 알게된 경로(복수체크)</td>
+        <td> 인터넷
+          <input type="checkbox" name="site">
+          벼룩시장
+          <input type="checkbox" name="site">
+          지인소개
+          <input type="checkbox" name="site">
+          기타
+          <input type="checkbox" name="site"></td>
+      </tr>
+      <tr>
+        <td bgcolor="lime">생년월일</td>
+        <td><input type="date"></td>
+      </tr>
+      <tr>
+        <td bgcolor="lime">E-Mail*</td>
+        <td><input type="email" value="@" size="10" style="text-align:right">
+          <select>
+            <option>daum.net</option>
+            <option selected>naver.com</option>
+            <option>google.com</option>
+            <option>hotmail.com</option>
+          </select>
+          <input type="checkbox">
+          [정보 메일을 수신함] </td>
+      </tr>
+      <tr>
+        <td colspan="2">* 자택, 회사주소를 입력하면 상품구매시 자동으로 입력됩니다.</td>
+      </tr>
+      <tr>
+        <td bgcolor="lime">자택전화</td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td bgcolor="lime">휴대폰번호</td>
+        <td><input type="tel" pattern="\d{3}-\d{3,4}-\d{4}" title="휴대폰 번호 입력 오류" placeholder="010-1234-5678"></td>
+      </tr>
+      <tr>
+        <td bgcolor="lime">자택주소*</td>
+        <td><input type="text" size="6">
+          -
+          <input type="text" size="6">
+          [우편번호검색] </td>
+      </tr>
+      <tr>
+        <td bgcolor="lime">나머지*</td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td bgcolor="lime">비상전화*</td>
+        <td><input type="text">
+          (배송시 참조합니다) </td>
+      </tr>
+      <tr>
+        <td colspan="2">* 회사주소는 옵션입니다.</td>
+      </tr>
+      <tr>
+        <td bgcolor="lime">회사전화</td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td bgcolor="lime">회사주소</td>
+        <td><input type="text" size="6">
+          -
+          <input type="text" size="6">
+          [우편번호검색] </td>
+      </tr>
+      <tr>
+        <td bgcolor="lime">나머지</td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center" valign="middle"><input type="submit" value="[가입하기]">
+          <input type="reset" value="[취소하기]"></td>
+      </tr>
+    </table>
+  </form>
+  <p>&nbsp;</p>
+  <style>
+    body {
+      font-size: 12px;
+    }
+  </style>
+</body>
+
+</html>
